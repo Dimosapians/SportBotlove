@@ -468,4 +468,5 @@ def handle_text (message):
         bot.send_chat_action(message.from_user.id, 'find_location')
         bot.send_location(message.from_user.id, 50.787543, 25.112122)
 
+
 bot.polling(none_stop=True, interval=0 )
