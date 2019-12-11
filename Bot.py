@@ -467,6 +467,10 @@ def handle_text (message):
     elif message.text == 'карта':
         bot.send_chat_action(message.from_user.id, 'find_location')
         bot.send_location(message.from_user.id, 50.787543, 25.112122)
+        
+    elif message.text == 'лнту':
+        bot.send_chat_action(message.from_user.id, 'find_location')
+        bot.send_location(message.from_user.id, 50.725051, 25.296245)
 
 
 bot.polling(none_stop=True, interval=0 )
