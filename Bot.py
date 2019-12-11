@@ -426,7 +426,7 @@ def handle_text (message):
     # -*- Аудио -*-
 
     elif message.text.lower() == 'музон':
-        directory = 'C:/Users/Dima/PycharmProjects/SportBot/files/audio'
+        directory = 'file://:/C:/Users/Dima/PycharmProjects/SportBot/files/audio'
         bot.send_message(message.chat.id, 'Музика для спорту')
         all_files_in_directory = os.listdir(directory)
         random_file = random.choice(all_files_in_directory)
@@ -472,5 +472,8 @@ def handle_text (message):
         bot.send_chat_action(message.from_user.id, 'find_location')
         bot.send_location(message.from_user.id, 50.725051, 25.296245)
 
+elif message.text == '123':
+        bot.send_chat_action(message.from_user.id, 'find_location')
+        bot.send_location(message.from_user.id, 50.725051, 25.292345)
 
 bot.polling(none_stop=True, interval=0 )
