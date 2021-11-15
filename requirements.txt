@@ -5,7 +5,7 @@ cffi==1.13.2
 chardet==3.0.4
 dj-git==0.3
 future==0.18.2
-pip==19.3.1
+pip==21.1
 pycparser==2.19
 pygal==2.4.0
 pygit2==1.0.0
